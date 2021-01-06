@@ -14,6 +14,7 @@ end
 local linux_cmds = {
   ['tsserver'] = 'sudo npm install -g typescript typescript-language-server',
   ['sumneko_lua'] = 'bash ./scripts/Linux/lua.sh',
+  ['rust_analyzer'] = 'bash ./scripts/Linux/rust.sh',
 }
 
 local installLang = function()
