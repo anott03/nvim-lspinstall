@@ -3,7 +3,10 @@
 Recently, neovim removed the `:LspInstall` function. It made it really easy to install language servers for its built in lsp, so I'm making a replacement!
 ## Languages Currently Supported
 - Typescript/Javascript (`:call LspInstall('tsserver')`)
+  - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
+  - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
 - Lua (`:call LspInstall('sumneko_lua')`)
+  - Prerequisites: [ninja](https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages)
   - When configuring LSP for lua, you will need the path to your lua-langauge-server installation. Nvim-lspinstall places it at `$HOME/.local/share/nvim/lspinstall/lua-language-server/`.
 - Rust (`:call LspInstall('rust_analyzer')`)
 ## Langauges Coming Soon
