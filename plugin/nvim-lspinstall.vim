@@ -1,3 +1,4 @@
 fun! LspInstall(lang)
-  echo a:lang
+  let g:Lsp_Install_Lang = a:lang
+  lua require('nvim-lspinstall').installLang()
 endfun
