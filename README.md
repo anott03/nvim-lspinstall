@@ -10,7 +10,7 @@ Recently, neovim removed the `:LspInstall` function. It made it really easy to i
   - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
   - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
 ## Langauges Coming Soon
-These are the languages we are actively developing support for.
+These are the languages we are actively developing support for. The plan/hope is to ultimately hit every language [listed by nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md).
 - C / C++
 ## Contributing
 Contributions would be greatly appreciated!
