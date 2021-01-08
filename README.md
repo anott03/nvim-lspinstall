@@ -1,6 +1,11 @@
 # nvim-lspinstall
 ## What is it?
 Recently, neovim removed the `:LspInstall` function. It made it really easy to install language servers for its built in lsp, so I'm making a replacement!
+## Installation
+You can install nvim-lspinstall with any neovim package manager.
+```vim
+Plug 'anott03/nvim-lspinstall'
+```
 ## Languages Currently Supported
 - Lua (`:call LspInstall('sumneko_lua')`)
   - Prerequisites: [ninja](https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages)
