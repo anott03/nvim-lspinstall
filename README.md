@@ -7,13 +7,19 @@ You can install nvim-lspinstall with any neovim package manager.
 Plug 'anott03/nvim-lspinstall'
 ```
 ## Languages Currently Supported
-- Lua (`:call LspInstall('sumneko_lua')`)
+- Cmake
+  - Prerequisites: [python](https://www.python.org/)
+  - `:call LspInstall('cmake')`
+- Lua
   - Prerequisites: [ninja](https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages)
   - When configuring LSP for lua, you will need the path to your lua-langauge-server installation. Nvim-lspinstall places it at `$HOME/.local/share/nvim/lspinstall/lua-language-server/`.
-- Rust (`:call LspInstall('rust_analyzer')`)
-- Typescript/Javascript (`:call LspInstall('tsserver')`)
+  - `:call LspInstall('sumneko_lua')`
+- Rust
+  - `:call LspInstall('rust_analyzer')`
+- Typescript/Javascript
   - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
   - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
+  - `:call LspInstall('tsserver')`
 ## Langauges Coming Soon
 These are the languages we are actively developing support for. The plan/hope is to ultimately hit every language [listed by nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md).
 - C / C++
