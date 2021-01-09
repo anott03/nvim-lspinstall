@@ -12,7 +12,7 @@ local function uname()
 end
 
 local linux_cmds = {
-  ['clangd']        = 'bash ./scripts/Linux/clangd.sh',
+  ['cmake']        = 'bash ./scripts/Linux/cmake.sh',
   ['rust_analyzer'] = 'bash ./scripts/Linux/rust.sh',
   ['sumneko_lua']   = 'bash ./scripts/Linux/lua.sh',
   ['tsserver']      = 'bash ./scripts/Linux/tsserver.sh',
