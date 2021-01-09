@@ -12,9 +12,10 @@ local function uname()
 end
 
 local linux_cmds = {
-  ['tsserver'] = 'sudo npm install -g typescript typescript-language-server',
-  ['sumneko_lua'] = 'bash ./scripts/Linux/lua.sh',
+  ['clangd']        = 'bash ./scripts/Linux/clangd.sh',
   ['rust_analyzer'] = 'bash ./scripts/Linux/rust.sh',
+  ['sumneko_lua']   = 'bash ./scripts/Linux/lua.sh',
+  ['tsserver']      = 'bash ./scripts/Linux/tsserver.sh',
 }
 
 local installLang = function()
@@ -31,4 +32,3 @@ end
 return {
   installLang = installLang
 }
-
