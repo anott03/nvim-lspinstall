@@ -12,10 +12,11 @@ local function uname()
 end
 
 local linux_cmds = {
-  ['cmake']        = 'bash ./scripts/Linux/cmake.sh',
-  ['rust_analyzer'] = 'bash ./scripts/Linux/rust.sh',
-  ['sumneko_lua']   = 'bash ./scripts/Linux/lua.sh',
-  ['tsserver']      = 'bash ./scripts/Linux/tsserver.sh',
+  ['cmake']         = 'pip install cmake-language-server',
+  -- url for rust_analyzer binary is currently broken
+  -- ['rust_analyzer'] = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/rust.sh | bash',
+  ['sumneko_lua']   = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/lua.sh | bash',
+  ['tsserver']      = 'npm install -g typescript typescript-language-server',
 }
 
 local installLang = function()
