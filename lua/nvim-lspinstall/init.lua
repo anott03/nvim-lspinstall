@@ -13,6 +13,7 @@ end
 
 local linux_cmds = {
   ['cmake']         = 'pip install cmake-language-server',
+  ['html']          = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/html.sh | bash',
   ['rust_analyzer'] = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/rust.sh | bash',
   ['sumneko_lua']   = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/lua.sh | bash',
   ['tsserver']      = 'npm install -g typescript typescript-language-server',
