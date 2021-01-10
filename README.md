@@ -14,6 +14,8 @@ Plug 'anott03/nvim-lspinstall'
   - Prerequisites: [ninja](https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages)
   - When configuring LSP for lua, you will need the path to your lua-langauge-server installation. Nvim-lspinstall places it at `$HOME/.local/share/nvim/lspinstall/lua-language-server/`.
   - `:call LspInstall('sumneko_lua')`
+- Rust
+  - `:call LspInstall('rust_analyzer')`
 - Typescript/Javascript
   - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
   - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
@@ -21,8 +23,6 @@ Plug 'anott03/nvim-lspinstall'
 ## Langauges Coming Soon
 These are the languages we are actively developing support for. The plan/hope is to ultimately hit every language [listed by nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md).
 - C / C++
-- Rust
-  - due to issues with the url I was using to get the rust_analyzer binary, I have moved rust out of the currently supported section. 
 ## Contributing
 Contributions would be greatly appreciated!
 - Platform: I am currently only working on nvim-lspinstall for linux. If people want to help add support for windows and macOS, that would be great.
