@@ -12,6 +12,7 @@ local function uname()
 end
 
 local linux_cmds = {
+  ['bashls']        = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/bashls.sh | bash',
   ['cmake']         = 'pip install cmake-language-server',
   ['html']          = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/html.sh | bash',
   ['rust_analyzer'] = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/rust.sh | bash',
