@@ -7,9 +7,17 @@ You can install nvim-lspinstall with any neovim package manager.
 Plug 'anott03/nvim-lspinstall'
 ```
 ## Languages Currently Supported
+- Bash
+  - Prerequisites: [nodejs](https://nodejs.org) (and npm)
+  - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
+  - `:call LspInstall('bashls')`
 - Cmake
   - Prerequisites: [python](https://www.python.org/)
   - `:call LspInstall('cmake')`
+- HTML
+  - Prerequisites: [nodejs](https://nodejs.org) (and npm)
+  - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
+  - `:call LspInstall('html')`
 - Lua
   - Prerequisites: [ninja](https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages)
   - When configuring LSP for lua, you will need the path to your lua-langauge-server installation. Nvim-lspinstall places it at `$HOME/.local/share/nvim/lspinstall/lua-language-server/`.
