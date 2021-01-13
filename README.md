@@ -35,6 +35,8 @@ Plug 'anott03/nvim-lspinstall'
 ## Langauges Coming Soon
 These are the languages we are actively developing support for. The plan/hope is to ultimately hit every language [listed by nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md).
 - C / C++
+## Where Are All the Scripts?
+In order to reduce the size of the plugin on your system, all of the install scripts have been moved to a seperate repository, which you can find [here](https://github.com/anott03/nvim-lspinstall-scripts). When you install a language server, the plugin will download the necessary script and execupte it. By doing this, adding support for new langauges won't take up additional space on your system.
 ## Contributing
 Contributions would be greatly appreciated!
 - Platform: I am currently only working on nvim-lspinstall for linux. If people want to help add support for windows and macOS, that would be great.

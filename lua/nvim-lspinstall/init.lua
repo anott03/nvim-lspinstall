@@ -12,13 +12,13 @@ local function uname()
 end
 
 local linux_cmds = {
-  ['bashls']        = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/bashls.sh | bash',
-  ['cmake']         = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/cmake.sh | bash',
-  ['html']          = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/html.sh | bash',
-  ['rust_analyzer'] = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/rust.sh | bash',
-  ['sumneko_lua']   = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/lua.sh | bash',
-  ['tsserver']      = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/tsserver.sh | bash',
-  ['intelephense']  = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall/master/scripts/Linux/intelephense.sh | bash',
+  ['bashls']        = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/bashls.sh | bash',
+  ['cmake']         = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/cmake.sh | bash',
+  ['html']          = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/html.sh | bash',
+  ['rust_analyzer'] = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/rust.sh | bash',
+  ['sumneko_lua']   = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/lua.sh | bash',
+  ['tsserver']      = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/tsserver.sh | bash',
+  ['intelephense']  = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/intelephense.sh | bash',
 }
 
 local installLang = function()
