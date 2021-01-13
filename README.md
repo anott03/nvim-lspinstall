@@ -32,12 +32,14 @@ Plug 'anott03/nvim-lspinstall'
   - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
   - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
   - `:call LspInstall('intelephense')`
-## Langauges Coming Soon
+## Languages Coming Soon
 These are the languages we are actively developing support for. The plan/hope is to ultimately hit every language [listed by nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md).
 - C / C++
 ## Where Are All the Scripts?
-In order to reduce the size of the plugin on your system, all of the install scripts have been moved to a seperate repository, which you can find [here](https://github.com/anott03/nvim-lspinstall-scripts). When you install a language server, the plugin will download the necessary script and execupte it. By doing this, adding support for new langauges won't take up additional space on your system.
+In order to reduce the size of the plugin on your system, all of the install scripts have been moved to a separate repository, which you can find [here](https://github.com/anott03/nvim-lspinstall-scripts). When you install a language server, the plugin will download the necessary script and execute it. By doing this, adding support for new languages won't take up additional space on your system.
+#### What does this mean for contributing?
+Unfortunately, this does mean contributers have a little bit of extra work. To add an installer, please make a PR with the install script itself at [anott03/nvim-lspinstall-scripts](https://github.com/anott03/nvim-lspinstall-scripts), and make another PR on this repository to update the README and to add the call to your installer.
 ## Contributing
 Contributions would be greatly appreciated!
 - Platform: I am currently only working on nvim-lspinstall for linux. If people want to help add support for windows and macOS, that would be great.
-- Langauges: The more people writing install scripts for languages, the more languages we can support.
+- Languages: The more people writing install scripts for languages, the more languages we can support.
