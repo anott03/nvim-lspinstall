@@ -67,7 +67,7 @@ These are the langauges we plan/hope support. It's the same list that was on the
 - [ ] angularls
 - [X] bashls
 - [ ] ccls
-- [X] clangd
+- [ ] clangd
 - [ ] clojure_lsp
 - [X] cmake
 - [ ] codeqlls
