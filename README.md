@@ -41,9 +41,6 @@ Plug 'anott03/nvim-lspinstall'
 - Python (pyls)
   - The only prerequisite is that you have python installed.
   - `:call LspInstall('pyls')`
-## Languages Coming Soon
-These are the languages we are actively developing support for. The plan/hope is to ultimately hit every language [listed by nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md).
-- C / C++
 ## Where Are All the Scripts?
 In order to reduce the size of the plugin on your system, all of the install scripts have been moved to a separate repository, which you can find [here](https://github.com/anott03/nvim-lspinstall-scripts). When you install a language server, the plugin will download the necessary script and execute it. By doing this, adding support for new languages won't take up additional space on your system.
 #### What does this mean for contributing?
@@ -52,3 +49,67 @@ Unfortunately, this does mean contributers have a little bit of extra work. To a
 Contributions would be greatly appreciated!
 - Platform: I am currently only working on nvim-lspinstall for linux. If people want to help add support for windows and macOS, that would be great.
 - Languages: The more people writing install scripts for languages, the more languages we can support.
+## Ultimate Language List
+These are the langauges we plan/hope support. It's the same list that was on the [lspconfig github page](https://github.com/neovim/nvim-lspconfig).
+[ ] als
+[ ] angularls
+[X] bashls
+[ ] ccls
+[X] clangd
+[ ] clojure_lsp
+[X] cmake
+[ ] codeqlls
+[ ] cssls
+[ ] dartls
+[ ] denols
+[ ] dhall_lsp_server
+[ ] diagnosticls
+[X] dockerls
+[ ] efm
+[ ] elixirls
+[ ] elmls
+[ ] flow
+[ ] fortls
+[ ] gdscript
+[ ] ghcide
+[X] gopls
+[ ] groovyls
+[ ] hie
+[ ] hls
+[X] html
+[X] intelephense
+[ ] jdtls
+[ ] jedi_language_server
+[ ] jsonls
+[ ] julials
+[ ] kotlin_language_server
+[ ] leanls
+[ ] metals
+[ ] nimls
+[ ] ocamlls
+[ ] ocamllsp
+[ ] omnisharp
+[ ] perlls
+[ ] purescriptls
+[X] pyls
+[ ] pyls_ms
+[ ] pyright
+[ ] r_language_server
+[ ] rls
+[ ] rnix
+[ ] rome
+[X] rust_analyzer
+[ ] scry
+[ ] solargraph
+[ ] sorbet
+[ ] sourcekit
+[ ] sqlls
+[X] sumneko_lua
+[ ] svelte
+[ ] terraformls
+[ ] texlab
+[X] tsserver
+[ ] vimls
+[ ] vuels
+[ ] yamlls
+[ ] zls
