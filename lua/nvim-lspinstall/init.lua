@@ -21,6 +21,7 @@ local linux_cmds = {
   ['rust_analyzer'] = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/rust.sh | bash',
   ['sumneko_lua']   = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/lua.sh | bash',
   ['tsserver']      = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/tsserver.sh | bash',
+  ['vuels']         = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/vuels.sh | bash',
 }
 
 local installLang = function()
