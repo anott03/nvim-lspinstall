@@ -32,6 +32,8 @@ Plug 'anott03/nvim-lspinstall'
   - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
   - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
   - `:call LspInstall('intelephense')`
+- Go
+  - There's nothing for us to install! As long as you have go installed on your system, you're good to go. Look [here](https://github.com/golang/tools/blob/master/gopls/doc/vim.md) for more detailed instructions on setting up LSP with go.
 ## Languages Coming Soon
 These are the languages we are actively developing support for. The plan/hope is to ultimately hit every language [listed by nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md).
 - C / C++
