@@ -51,65 +51,65 @@ Contributions would be greatly appreciated!
 - Languages: The more people writing install scripts for languages, the more languages we can support.
 ## Ultimate Language List
 These are the langauges we plan/hope support. It's the same list that was on the [lspconfig github page](https://github.com/neovim/nvim-lspconfig).
-[ ] als
-[ ] angularls
-[X] bashls
-[ ] ccls
-[X] clangd
-[ ] clojure_lsp
-[X] cmake
-[ ] codeqlls
-[ ] cssls
-[ ] dartls
-[ ] denols
-[ ] dhall_lsp_server
-[ ] diagnosticls
-[X] dockerls
-[ ] efm
-[ ] elixirls
-[ ] elmls
-[ ] flow
-[ ] fortls
-[ ] gdscript
-[ ] ghcide
-[X] gopls
-[ ] groovyls
-[ ] hie
-[ ] hls
-[X] html
-[X] intelephense
-[ ] jdtls
-[ ] jedi_language_server
-[ ] jsonls
-[ ] julials
-[ ] kotlin_language_server
-[ ] leanls
-[ ] metals
-[ ] nimls
-[ ] ocamlls
-[ ] ocamllsp
-[ ] omnisharp
-[ ] perlls
-[ ] purescriptls
-[X] pyls
-[ ] pyls_ms
-[ ] pyright
-[ ] r_language_server
-[ ] rls
-[ ] rnix
-[ ] rome
-[X] rust_analyzer
-[ ] scry
-[ ] solargraph
-[ ] sorbet
-[ ] sourcekit
-[ ] sqlls
-[X] sumneko_lua
-[ ] svelte
-[ ] terraformls
-[ ] texlab
-[X] tsserver
-[ ] vimls
-[ ] vuels
-[ ] yamlls
-[ ] zls
+- [ ] als
+- [ ] angularls
+- [X] bashls
+- [ ] ccls
+- [X] clangd
+- [ ] clojure_lsp
+- [X] cmake
+- [ ] codeqlls
+- [ ] cssls
+- [ ] dartls
+- [ ] denols
+- [ ] dhall_lsp_server
+- [ ] diagnosticls
+- [X] dockerls
+- [ ] efm
+- [ ] elixirls
+- [ ] elmls
+- [ ] flow
+- [ ] fortls
+- [ ] gdscript
+- [ ] ghcide
+- [X] gopls
+- [ ] groovyls
+- [ ] hie
+- [ ] hls
+- [X] html
+- [X] intelephense
+- [ ] jdtls
+- [ ] jedi_language_server
+- [ ] jsonls
+- [ ] julials
+- [ ] kotlin_language_server
+- [ ] leanls
+- [ ] metals
+- [ ] nimls
+- [ ] ocamlls
+- [ ] ocamllsp
+- [ ] omnisharp
+- [ ] perlls
+- [ ] purescriptls
+- [X] pyls
+- [ ] pyls_ms
+- [ ] pyright
+- [ ] r_language_server
+- [ ] rls
+- [ ] rnix
+- [ ] rome
+- [X] rust_analyzer
+- [ ] scry
+- [ ] solargraph
+- [ ] sorbet
+- [ ] sourcekit
+- [ ] sqlls
+- [X] sumneko_lua
+- [ ] svelte
+- [ ] terraformls
+- [ ] texlab
+- [X] tsserver
+- [ ] vimls
+- [ ] vuels
+- [ ] yamlls
+- [ ] zls
