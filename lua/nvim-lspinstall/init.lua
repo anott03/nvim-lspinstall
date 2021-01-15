@@ -14,6 +14,7 @@ end
 local linux_cmds = {
   ['bashls']        = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/bashls.sh | bash',
   ['cmake']         = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/cmake.sh | bash',
+  ['cssls']         = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/cssls.sh | bash',
   ['docker']        = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/docker.sh | bash',
   ['html']          = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/html.sh | bash',
   ['intelephense']  = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/intelephense.sh | bash',
