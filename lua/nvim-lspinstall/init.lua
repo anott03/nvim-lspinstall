@@ -19,6 +19,7 @@ local linux_cmds = {
   ['sumneko_lua']   = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/lua.sh | bash',
   ['tsserver']      = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/tsserver.sh | bash',
   ['intelephense']  = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/intelephense.sh | bash',
+  ['pyls']  = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/pyls.sh | bash',
 }
 
 local installLang = function()
