@@ -14,6 +14,10 @@ Plug 'anott03/nvim-lspinstall'
 - Cmake
   - Prerequisites: [python](https://www.python.org/)
   - `:call LspInstall('cmake')`
+- CSS
+  - Prerequisites: [nodejs](https://nodejs.org) (and npm)
+  - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
+  - `:call LspInstall('cssls')`
 - Docker
   - Prerequisites: [nodejs](https://nodejs.org) (and npm)
   - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
@@ -41,6 +45,14 @@ Plug 'anott03/nvim-lspinstall'
 - Python (pyls)
   - The only prerequisite is that you have python installed.
   - `:call LspInstall('pyls')`
+- VueJS
+  - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
+  - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
+  - `:call LspInstall('vuels')`
+- Yaml
+  - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
+  - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
+  - `:call LspInstall('yamlls')`
 ## Where Are All the Scripts?
 In order to reduce the size of the plugin on your system, all of the install scripts have been moved to a separate repository, which you can find [here](https://github.com/anott03/nvim-lspinstall-scripts). When you install a language server, the plugin will download the necessary script and execute it. By doing this, adding support for new languages won't take up additional space on your system.
 #### What does this mean for contributing?
@@ -59,7 +71,7 @@ These are the langauges we plan/hope support. It's the same list that was on the
 - [ ] clojure_lsp
 - [X] cmake
 - [ ] codeqlls
-- [ ] cssls
+- [X] cssls
 - [ ] dartls
 - [ ] denols
 - [ ] dhall_lsp_server
@@ -110,6 +122,6 @@ These are the langauges we plan/hope support. It's the same list that was on the
 - [ ] texlab
 - [X] tsserver
 - [ ] vimls
-- [ ] vuels
-- [ ] yamlls
+- [X] vuels
+- [X] yamlls
 - [ ] zls
