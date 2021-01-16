@@ -45,6 +45,10 @@ Plug 'anott03/nvim-lspinstall'
 #### Python (pyls)
 - The only prerequisite is that you have python installed.
 - `:call LspInstall('pyls')`
+#### Svelte
+- A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
+- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
+- `:call LspInstall('svelte')`
 #### VueJS
 - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
 - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
@@ -117,7 +121,7 @@ These are the langauges we plan/hope support. It's the same list that was on the
 - [ ] sourcekit
 - [ ] sqlls
 - [X] sumneko_lua
-- [ ] svelte
+- [X] svelte
 - [ ] terraformls
 - [ ] texlab
 - [X] tsserver
