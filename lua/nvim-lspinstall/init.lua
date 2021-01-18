@@ -18,6 +18,7 @@ local linux_cmds = {
   ['docker']        = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/docker.sh | bash',
   ['html']          = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/html.sh | bash',
   ['intelephense']  = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/intelephense.sh | bash',
+  ['jsonls']        = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/jsonls.sh | bash',
   ['pyls']          = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/pyls.sh | bash',
   ['rust_analyzer'] = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/rust.sh | bash',
   ['sumneko_lua']   = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/lua.sh | bash',

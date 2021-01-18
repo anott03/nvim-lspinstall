@@ -24,10 +24,14 @@ Plug 'anott03/nvim-lspinstall'
 - `:call LspInstall('docker')`
 #### Go
 - There's nothing for us to install! As long as you have go installed on your system, you're good to go. Look [here](https://github.com/golang/tools/blob/master/gopls/doc/vim.md) for more detailed instructions on setting up LSP with go.
-#### HTML
-- Prerequisites: [nodejs](https://nodejs.org) (and npm)
-- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:call LspInstall('html')`
+#### html
+- prerequisites: [nodejs](https://nodejs.org) (and npm)
+- depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
+- `:call lspinstall('html')`
+#### json
+- prerequisites: [nodejs](https://nodejs.org) (and npm)
+- depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
+- `:call lspinstall('jsonls')`
 #### Lua
 - Prerequisites: [ninja](https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages)
 - When configuring LSP for lua, you will need the path to your lua-langauge-server installation. Nvim-lspinstall places it at `$HOME/.local/share/nvim/lspinstall/lua-language-server/`.
@@ -96,7 +100,7 @@ These are the langauges we plan/hope support. It's the same list that was on the
 - [X] intelephense
 - [ ] jdtls
 - [ ] jedi_language_server
-- [ ] jsonls
+- [X] jsonls
 - [ ] julials
 - [ ] kotlin_language_server
 - [ ] leanls
