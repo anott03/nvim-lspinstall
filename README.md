@@ -22,6 +22,10 @@ Plug 'anott03/nvim-lspinstall'
 - Prerequisites: [nodejs](https://nodejs.org) (and npm)
 - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
 - `:call LspInstall('docker')`
+#### Elm
+- Prerequisites: [nodejs](https://nodejs.org) (and npm)
+- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
+- `:call LspInstall('elmls')`
 #### Go
 - There's nothing for us to install! As long as you have go installed on your system, you're good to go. Look [here](https://github.com/golang/tools/blob/master/gopls/doc/vim.md) for more detailed instructions on setting up LSP with go.
 #### html
@@ -46,6 +50,10 @@ Plug 'anott03/nvim-lspinstall'
 - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
 - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
 - `:call LspInstall('intelephense')`
+#### Purescript
+- A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
+- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
+- `:call LspInstall('purescriptls')`
 #### Python (pyls)
 - The only prerequisite is that you have python installed.
 - `:call LspInstall('pyls')`
