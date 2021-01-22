@@ -38,6 +38,8 @@ local installLang = function()
   local lang = vim.g["Lsp_Install_Lang"]
   if linux_cmds[lang] then
     runShellCommand(linux_cmds[lang])
+  else
+    error("there is no server with the name " .. lang)
   end
 end
 
