@@ -6,7 +6,7 @@ endfun
 
 command! -nargs=1 -complete=custom,ListLsps InstallLsp :call LspInstall('<args>')
 
-function! ListLsps(A, L, P) abort
-  let l:langs = luaeval('require("nvim-lspinstall").get_lsps()')
-  return l:langs
-endfunctio
+function! ListLsps(arg, line, pos) abort
+  let l:list = luaeval('require("nvim-lspinstall").get_lsps()')
+  return join(list, "\n")
+endfunction
