@@ -3,3 +3,10 @@ fun! LspInstall(lang)
   let g:Lsp_Install_Lang = a:lang
   lua require('nvim-lspinstall').installLang()
 endfun
+
+command! -nargs=1 -complete=custom,ListLsps InstallLsp :call LspInstall('<args>')
+
+function! ListLsps(arg, line, pos) abort
+  let l:list = luaeval('require("nvim-lspinstall").get_lsps()')
+  return join(list, "\n")
+endfunction
