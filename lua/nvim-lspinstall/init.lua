@@ -43,6 +43,11 @@ local installLang = function()
   end
 end
 
+local get_lsps = function()
+  return vim.tbl_keys(linux_cmds)
+end
+
 return {
-  installLang = installLang
+  installLang = installLang,
+  get_lsps = get_lsps
 }
