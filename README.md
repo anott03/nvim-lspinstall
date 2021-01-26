@@ -10,42 +10,42 @@ Plug 'anott03/nvim-lspinstall'
 #### Bash
 - Prerequisites: [nodejs](https://nodejs.org) (and npm)
 - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:InstallLS bashls`
+- `:LspInstall bashls`
 #### Cmake
 - Prerequisites: [python](https://www.python.org/)
-- `:InstallLS cmake`
+- `:LspInstall cmake`
 #### CSS
 - Prerequisites: [nodejs](https://nodejs.org) (and npm)
 - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:InstallLS cssls`
+- `:LspInstall cssls`
 #### Docker
 - Prerequisites: [nodejs](https://nodejs.org) (and npm)
 - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:InstallLS docker`
+- `:LspInstall docker`
 #### Elm
 - Prerequisites: [nodejs](https://nodejs.org) (and npm)
 - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:InstallLS elmls`
+- `:LspInstall elmls`
 #### Go
 - There's nothing for us to install! As long as you have go installed on your system, you're good to go. Look [here](https://github.com/golang/tools/blob/master/gopls/doc/vim.md) for more detailed instructions on setting up LSP with go.
 #### html
 - prerequisites: [nodejs](https://nodejs.org) (and npm)
 - depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:InstallLS html`
+- `:LspInstall html`
 #### json
 - prerequisites: [nodejs](https://nodejs.org) (and npm)
 - depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:InstallLS jsonls`
+- `:LspInstall jsonls`
 #### Lua
 - Prerequisites: [ninja](https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages)
 - When configuring LSP for lua, you will need the path to your lua-langauge-server installation. Nvim-lspinstall places it at `$HOME/.local/share/nvim/lspinstall/lua-language-server/`.
-- `:InstallLS sumneko_lua`
+- `:LspInstall sumneko_lua`
 #### Rust
-- `:InstallLS rust_analyzer`
+- `:LspInstall rust_analyzer`
 #### Typescript/Javascript
 - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
 - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:InstallLS tsserver`
+- `:LspInstall tsserver`
 #### PHP (Intelephense)
 - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
 - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
@@ -53,22 +53,22 @@ Plug 'anott03/nvim-lspinstall'
 #### Purescript
 - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
 - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:InstallLS purescriptls`
+- `:LspInstall purescriptls`
 #### Python (pyls)
 - The only prerequisite is that you have python installed.
-- `:InstallLS pyls`
+- `:LspInstall pyls`
 #### Svelte
 - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
 - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:InstallLS svelte`
+- `:LspInstall svelte`
 #### VueJS
 - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
 - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:InstallLS vuels`
+- `:LspInstall vuels`
 #### Yaml
 - A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
 - Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:InstallLS yamlls`
+- `:LspInstall yamlls`
 ## Where Are All the Scripts?
 In order to reduce the size of the plugin on your system, all of the install scripts have been moved to a separate repository, which you can find [here](https://github.com/anott03/nvim-lspinstall-scripts). When you install a language server, the plugin will download the necessary script and execute it. By doing this, adding support for new languages won't take up additional space on your system.
 #### What does this mean for contributing?
