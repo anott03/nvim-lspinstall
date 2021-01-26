@@ -6,6 +6,7 @@ endfun
 
 command! -nargs=1 -complete=custom,ListLsps InstallLanguageServer :call LspInstall('<args>')
 command! -nargs=1 -complete=custom,ListLsps InstallLS :call LspInstall('<args>')
+command! -nargs=1 -complete=custom,ListLsps LspInstall :call LspInstall('<args>')
 
 function! ListLsps(arg, line, pos) abort
   let l:list = luaeval('require("nvim-lspinstall").get_lsps()')

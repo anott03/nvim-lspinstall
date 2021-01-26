@@ -1,5 +1,5 @@
 local vim = vim
-local runShellCommand = require('nvim-lspinstall/run-shell-command')
+local runShellCommand = require('nvim-lspinstall/util').runShellCommand
 
 local function uname()
   local f = assert(io.popen('uname', 'r'))

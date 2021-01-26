@@ -42,4 +42,6 @@ local function runShellCommand(cmd)
   vim.api.nvim_feedkeys(exit_term, "n", {})
 end
 
-return runShellCommand
+return {
+  runShellCommand = runShellCommand,
+}
