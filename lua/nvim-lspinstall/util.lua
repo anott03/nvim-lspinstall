@@ -20,26 +20,30 @@ local function runShellCommand(cmd)
     width    = math.floor(width * factor),
     height   = math.floor(height * factor),
     col      = math.floor(width * (1 - factor) / 2),
-    row      = math.floor(height * (1 - factor) / 2)
+    row      = math.floor(height * (1 - factor) / 2),
+    style    = "minimal",
   })
-  vim.api.nvim_exec("set nonu norelativenumber signcolumn=no colorcolumn=", nil)
 
-  vim.cmd(":term")
-  -- definitions of some key sequences
-  local carriage_return = vim.api.nvim_replace_termcodes("<CR>", true, false, true)
-  local exit_term = vim.api.nvim_replace_termcodes("<C-\\><C-n>", true, false, true)
+  vim.fn.termopen(cmd)
+  vim.api.nvim_buf_set_keymap(bufh, "n", "<ESC>",
+    "<CMD>lua vim.api.nvim_buf_delete("..bufh..", {force=true})<CR>", {})
 
-  -- a super hacky way to remove the prompt from the window
-  -- vim.api.nvim_feedkeys("aexport PS1='' && clear", "n", {})
+  -- vim.cmd(":term")
+  -- -- definitions of some key sequences
+  -- local carriage_return = vim.api.nvim_replace_termcodes("<CR>", true, false, true)
+  -- local exit_term = vim.api.nvim_replace_termcodes("<C-\\><C-n>", true, false, true)
+
+  -- -- a super hacky way to remove the prompt from the window
+  -- -- vim.api.nvim_feedkeys("aexport PS1='' && clear", "n", {})
+  -- -- vim.api.nvim_feedkeys(carriage_return, "n", {})
+  -- vim.api.nvim_feedkeys(exit_term, "n", {})
+
+  -- -- insert the command into the terminal
+  -- vim.api.nvim_feedkeys("a" .. cmd, "n", {})
   -- vim.api.nvim_feedkeys(carriage_return, "n", {})
-  vim.api.nvim_feedkeys(exit_term, "n", {})
 
-  -- insert the command into the terminal
-  vim.api.nvim_feedkeys("a" .. cmd, "n", {})
-  vim.api.nvim_feedkeys(carriage_return, "n", {})
-
-  -- exit insert mode
-  vim.api.nvim_feedkeys(exit_term, "n", {})
+  -- -- exit insert mode
+  -- vim.api.nvim_feedkeys(exit_term, "n", {})
 end
 
 return {
