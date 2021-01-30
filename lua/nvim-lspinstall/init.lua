@@ -1,15 +1,4 @@
 local vim = vim
-local runShellCommand = require('nvim-lspinstall/util').runShellCommand
-
-local function uname()
-  local f = assert(io.popen('uname', 'r'))
-  local s = assert(f:read('*a'))
-  f:close()
-  s = string.gsub(s, '^%s+', '')
-  s = string.gsub(s, '%s+$', '')
-  s = string.gsub(s, '[\n\r]+', ' ')
-  return s
-end
 
 local linux_cmds = {
   ['bashls']        = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/bashls.sh | bash',
@@ -30,17 +19,23 @@ local linux_cmds = {
   ['yamlls']        = 'curl https://raw.githubusercontent.com/anott03/nvim-lspinstall-scripts/master/Linux/yamlls.sh | bash',
 }
 
+local configs = require('nvim-lspinstall/configs')
 local installLang = function()
-  if uname() ~= 'Linux' then
-    error('nvim-lspinstall currently only supports linux')
-    return
-  end
   local lang = vim.g["Lsp_Install_Lang"]
-  if linux_cmds[lang] then
-    runShellCommand(linux_cmds[lang])
-  else
-    error("there is no server with the name " .. lang)
+  if configs[lang] == nil then
+    pcall(require('nvim-lspinstall/langs/'..lang))
   end
+  local config = configs[lang]
+  if not config then
+    return print("Invalid server name:", lang)
+  end
+  if not config.install then
+    return print(lang, "can't be automatically installed (yet)")
+  end
+  if config.install_info().is_installed then
+    return print(lang, "is already installed")
+  end
+  config.install()
 end
 
 local get_lsps = function()
