@@ -6,6 +6,9 @@ You can install nvim-lspinstall with any neovim package manager.
 ```vim
 Plug 'anott03/nvim-lspinstall'
 ```
+## What's Being Worked on Right Now
+I am currently focusing my attention on the `luaSnippets` branch. I want to eliminate the two-repo approach that is currently implemented, and instead have the installers be embedded lua scripts. If you want to contribute either to that or to the current model, please do!
+
 ## Languages Currently Supported
 #### Bash
 - Prerequisites: [nodejs](https://nodejs.org) (and npm)
