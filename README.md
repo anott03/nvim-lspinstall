@@ -6,91 +6,17 @@ You can install nvim-lspinstall with any neovim package manager.
 ```vim
 Plug 'anott03/nvim-lspinstall'
 ```
-## What's Being Worked on Right Now
-I am currently focusing my attention on the `luaSnippets` branch. I want to eliminate the two-repo approach that is currently implemented, and instead have the installers be embedded lua scripts. If you want to contribute either to that or to the current model, please do!
-
-## Languages Currently Supported
-#### Bash
-- Prerequisites: [nodejs](https://nodejs.org) (and npm)
-- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:LspInstall bashls`
-#### Cmake
-- Prerequisites: [python](https://www.python.org/)
-- `:LspInstall cmake`
-#### CSS
-- Prerequisites: [nodejs](https://nodejs.org) (and npm)
-- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:LspInstall cssls`
-#### Docker
-- Prerequisites: [nodejs](https://nodejs.org) (and npm)
-- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:LspInstall docker`
-#### Elm
-- Prerequisites: [nodejs](https://nodejs.org) (and npm)
-- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:LspInstall elmls`
-#### Go
-- There's nothing for us to install! As long as you have go installed on your system, you're good to go. Look [here](https://github.com/golang/tools/blob/master/gopls/doc/vim.md) for more detailed instructions on setting up LSP with go.
-#### html
-- prerequisites: [nodejs](https://nodejs.org) (and npm)
-- depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:LspInstall html`
-#### json
-- prerequisites: [nodejs](https://nodejs.org) (and npm)
-- depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:LspInstall jsonls`
-#### Lua
-- Prerequisites: [ninja](https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages)
-- When configuring LSP for lua, you will need the path to your lua-langauge-server installation. Nvim-lspinstall places it at `$HOME/.local/share/nvim/lspinstall/lua-language-server/`.
-- `:LspInstall sumneko_lua`
-#### Rust
-- `:LspInstall rust_analyzer`
-#### Typescript/Javascript
-- A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
-- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:LspInstall tsserver`
-#### PHP (Intelephense)
-- A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
-- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:InstalllLS intelephense`
-#### Purescript
-- A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
-- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:LspInstall purescriptls`
-#### Python (pyls)
-- The only prerequisite is that you have python installed.
-- `:LspInstall pyls`
-#### Svelte
-- A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
-- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:LspInstall svelte`
-#### VueJS
-- A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
-- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:LspInstall vuels`
-#### Yaml
-- A prerequisite is that you have [nodejs](https://nodejs.org) and npm installed.
-- Depending on how you have node/npm set it up, you may need sudo permissions to complete the installation.
-- `:LspInstall yamlls`
-## Where Are All the Scripts?
-In order to reduce the size of the plugin on your system, all of the install scripts have been moved to a separate repository, which you can find [here](https://github.com/anott03/nvim-lspinstall-scripts). When you install a language server, the plugin will download the necessary script and execute it. By doing this, adding support for new languages won't take up additional space on your system.
-#### What does this mean for contributing?
-Unfortunately, this does mean contributers have a little bit of extra work. To add an installer, please make a PR with the install script itself at [anott03/nvim-lspinstall-scripts](https://github.com/anott03/nvim-lspinstall-scripts), and make another PR on this repository to update the README and to add the call to your installer.
-## Contributing
-Contributions would be greatly appreciated!
-- Platform: I am currently only working on nvim-lspinstall for linux. If people want to help add support for windows and macOS, that would be great.
-- Languages: The more people writing install scripts for languages, the more languages we can support.
 ## Ultimate Language List
 These are the langauges we plan/hope support. It's the same list that was on the [lspconfig github page](https://github.com/neovim/nvim-lspconfig).
 - [ ] als
 - [ ] angularls
-- [X] bashls
+- [ ] bashls
 - [ ] ccls
-- [ ] clangd
+- [X] clangd
 - [ ] clojure_lsp
-- [X] cmake
+- [ ] cmake
 - [ ] codeqlls
-- [X] cssls
+- [ ] cssls
 - [ ] dartls
 - [ ] denols
 - [ ] dhall_lsp_server
@@ -98,12 +24,12 @@ These are the langauges we plan/hope support. It's the same list that was on the
 - [X] dockerls
 - [ ] efm
 - [ ] elixirls
-- [ ] elmls
+- [X] elmls
 - [ ] flow
 - [ ] fortls
 - [ ] gdscript
 - [ ] ghcide
-- [X] gopls
+- [ ] gopls
 - [ ] groovyls
 - [ ] hie
 - [ ] hls
@@ -117,30 +43,30 @@ These are the langauges we plan/hope support. It's the same list that was on the
 - [ ] leanls
 - [ ] metals
 - [ ] nimls
-- [ ] ocamlls
+- [X] ocamlls
 - [ ] ocamllsp
-- [ ] omnisharp
+- [X] omnisharp
 - [ ] perlls
-- [ ] purescriptls
-- [X] pyls
+- [X] purescriptls
+- [ ] pyls
 - [ ] pyls_ms
-- [ ] pyright
+- [X] pyright (not working)
 - [ ] r_language_server
 - [ ] rls
 - [ ] rnix
 - [ ] rome
-- [X] rust_analyzer
+- [ ] rust_analyzer
 - [ ] scry
 - [ ] solargraph
 - [ ] sorbet
 - [ ] sourcekit
-- [ ] sqlls
+- [X] sqlls
 - [X] sumneko_lua
 - [X] svelte
 - [ ] terraformls
 - [ ] texlab
 - [X] tsserver
-- [ ] vimls
+- [X] vimls
 - [X] vuels
 - [X] yamlls
 - [ ] zls
