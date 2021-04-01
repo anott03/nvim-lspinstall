@@ -17,8 +17,6 @@ local linux_cmds = {
   'tsserver',
   'vuels',
   'yamlls',
-  'sumneko_lua',
-  'svelte',
 }
 
 local configs = require('nvim-lspinstall/configs')
