@@ -66,7 +66,7 @@ git submodule update --init --recursive
 
 # build
 cd 3rd/luamake
-ninja -f ninja/$build_file
+ninja -f compile/ninja/$build_file
 cd ../..
 ./3rd/luamake/luamake rebuild
     ]=]
