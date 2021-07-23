@@ -13,7 +13,7 @@ INTRODUCTION                                *lspinstall* *lspinstall-introductio
 
 Nvim-lspinstall is a replacement for the now deprecated `:LspInstall` editor
 command that was previously included in |nvim-lspconfig|. This plugin adds
-back that functionality so that people who want to use Neovim 0.5's builin LSP
+back that functionality so that people who want to use Neovim 0.5's builtin LSP
 do not have to install all of their language servers by hand, though does not
 yet include all of the language servers that |nvim-lspconfig| had supported.
 
@@ -24,7 +24,7 @@ Lspinstall works only with Neovim 0.5, as that is the only version with the
 builtin LSP client. That is the only requirement for the plugin itself, though
 some language servers may have their own individual requirements.
 
-We also reccomend that you use the |nvim-lspconfig| plugin which makes it easy
+We also recommend that you use the |nvim-lspconfig| plugin which makes it easy
 to set up language servers once you have them installed.
 
 ==============================================================================
@@ -33,7 +33,7 @@ USAGE                                                         *lspinstall-usage*
                                                            *lspinstall-commands*
 Commands~
 
-`:LpsInstall`                                                        *:LspInstall*
+`:LspInstall`                                                        *:LspInstall*
     This is the command that allows you to install language servers. For
     example, to install the sumneko_lua language server, you would run
     `:LspInstall sumneko_lua`
